@@ -26,6 +26,10 @@ body{
     height: 414;
 
 }
+.collection{
+    text-align: center;
+    font-size: 36px;
+}
 .btn-hero{
     background-color: #E02C6D;
     color: #FFFFFF;
