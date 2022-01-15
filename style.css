@@ -2,6 +2,9 @@
 /* fontfamily */
 body{
     font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .container{
     width: 1164px;
@@ -63,7 +66,8 @@ body{
 }
 
 .see{
-    margin-left: 10px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .products-section{
@@ -75,16 +79,14 @@ body{
 }
 .products{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     margin-left: 10px;
-
-    
 }
 .product{
   padding: 15px;
-  box-shadow: 0px 0px 40px rgba(0,0,0,15);
+  box-shadow: 10px 10px 30px rgb(218, 219, 219);
   border-radius: 5px;
 }
 .product h3{
@@ -94,7 +96,7 @@ body{
     line-height: 40px;
     margin-top: 16px;
     color: #18191f;}
-    .product p{
+    .product {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -141,14 +143,80 @@ footer p{
 }
 .social-icon a{
     color: #9cace2;
-    padding: 16px;
-    border-radius: 50%;
+    padding: 14px 14px;
+    border-radius: 40px;
     margin-left: 14px;
     background: rgb(15,14,14);
     transition: 0.5s;
-    
+}
+.blog-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.blogs{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 44px 0;
+}
+.blogs button{
+    border: 2px solid purple;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    color: purple;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.blogs button:hover{
+    background-color: purple;
+    color: white;
+}
+.blog{
+    border: 1px solid rgb(207, 207, 207);
+    padding: 12px;
+}
+.blogs img{
+    width: 100%;
+}
+.contact-form{
+    /* width: 90%;
+    margin: 0 auto; */
+    text-align: center;
+    margin-bottom: 44px;
+}
+.contact input{
+    border: 1px solid lightblue;
+    padding: 11px 44px;
+    margin-top: 8px;
+}
+.submit-btn{
+    border: 0;
+    background-color: purple;
+    border-radius: 6px;
+    padding: 11px 33px;
+    color: white;
+    font-size: 18px;
 
 }
+
+/* media query */
+@media only screen and (max-width: 500px) {
+    .products, .blogs {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .top-section{
+        display: inline;
+    }
+  }
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .products, .blogs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
 
     
